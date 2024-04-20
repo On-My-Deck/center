@@ -23,7 +23,7 @@
 - FATFs
 
 # RoadMap
-# Demo Vedio
+# Demo Video
 # Reference Projects
 # DataSheet
 - [ES8311](https://github.com/On-My-Deck/center/blob/main/files/ES8311%20PB.pdf)
