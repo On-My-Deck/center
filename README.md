@@ -19,6 +19,7 @@
 - Tomato Clock
 - Audio Player ( mp3,wave,etc )
 - Support Ftp server
+- LVGL v8.3.0
 - FATFs
 
 # RoadMap
