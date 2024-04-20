@@ -28,7 +28,7 @@
 1. Use esp32 auto download module to connect uart0 of esp32s3
 2. Download firmware.bin to esp32s3 using Thonny utility
 3. After booting esp32s3 generates the MicroPython-AP, use your PC to connect to this AP.
-4. Set Thonny ( [more info about Thonny](https://thonny.org/) ) to webREPL mode. url:ws://192.168.4.1:8266/ password:1234
+4. Set Thonny ( [about Thonny](https://thonny.org/) ) to webREPL mode. url:ws://192.168.4.1:8266/ password:1234
 5. Click Thonny's to restart the backend process, and after successful linking, change the essid and password in wifi_config.json to the Wi-Fi you need to link.
 6. Reboot the esp32s3 so that you can link your own router.
 # Demo Video
