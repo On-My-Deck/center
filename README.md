@@ -24,6 +24,6 @@
 # Demo Vedio
 # Reference Projects
 # DateSheet
-- ES8311
-- ES7210
+- [ES8311](https://github.com/On-My-Deck/center/blob/main/files/ES8311%20PB.pdf)
+- [ES7210](https://github.com/On-My-Deck/center/blob/main/files/Everest-ES7210.pdf)
 - 
