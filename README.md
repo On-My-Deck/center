@@ -18,13 +18,26 @@
 - Support Hue strip and Wiz strip
 - Tomato Clock
 - Audio Player ( mp3,wave,etc )
-- Support Ftp server
+- Ftp server
 - LVGL v8.3.0
 - FATFs
 
 # RoadMap
 # Demo Video
 # Reference Projects
+[esp idf](https://github.com/espressif/esp-idf)
+
+[esp-dev-kits/esp32-s3-lcd-ev-board](https://github.com/espressif/esp-dev-kits/tree/master/esp32-s3-lcd-ev-board)
+
+[MicroPython](https://github.com/micropython/micropython)
+
+[LVGL](https://github.com/lvgl/lvgl)
+
+[scottbez1/smartknob](https://github.com/scottbez1/smartknob)
+
+
+
+
 # DataSheet
 - [ES8311](https://github.com/On-My-Deck/center/blob/main/files/ES8311%20PB.pdf)
 - [ES7210](https://github.com/On-My-Deck/center/blob/main/files/Everest-ES7210.pdf)
