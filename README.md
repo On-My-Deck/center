@@ -16,6 +16,7 @@
 
 `SoftWare Feature`
 - Support Hue strip and Wiz strip
+- Tomato Clock
 - Audio Player ( mp3,wave,etc )
 - Support Ftp server
 - FATFs
