@@ -1,1 +1,1 @@
-# Wiz strip API
+# Wiz Strip API
