@@ -31,6 +31,16 @@
 4. Set Thonny ( [about Thonny](https://thonny.org/) ) to webREPL mode. `url:` ws://192.168.4.1:8266/ `password:` 1234
 5. Click Thonny's to restart the backend process, and after successful linking, change the essid and password in wifi_config.json to the Wi-Fi you need to link.
 6. Reboot the esp32s3 so that you can link your own router.
+
+`The use of Ftp server`
+
+Tool: File zilla client
+
+settings:
+- `IP：` esp32s3 IP `port:` ftp server default port
+- `user:` esp32 `password:` esp32
+- transfer settings -> maximum number of connections 1
+
 # Demo Video
 # Reference Projects
 [esp idf](https://github.com/espressif/esp-idf)
