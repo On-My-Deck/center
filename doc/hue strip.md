@@ -1,1 +1,1 @@
-# hue strip API
+# Hue Strip API
