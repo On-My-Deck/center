@@ -69,7 +69,7 @@ def test() :
 
             
 def discoverWizStrip():
-    hue_bridge_strip.hue_bridge_strip_handle(HUE_BRIDGE_STRIP_API_EVENT_SET_HUE_SAT_BRI_COLOR.HUE_BRIDGE_STRIP_API_EVENT_START_DISCOVER, "{}")
+    hue_bridge_strip.hue_bridge_strip_handle(hueBridgeStripCmd.HUE_BRIDGE_STRIP_API_EVENT_START_DISCOVER, "{}")
     return hue_bridge_strip.hue_bridge_strip_handle(hueBridgeStripCmd.HUE_BRIDGE_STRIP_API_EVENT_GET_DISCOVER_IP, "{}")
     
     for i in range(200):
@@ -102,57 +102,22 @@ if __name__ == '__main__':
     
     
     time.sleep(2)
+    # turn off strip
+    ret = hue_bridge_strip.hue_bridge_strip_handle(hueBridgeStripCmd.HUE_BRIDGE_STRIP_API_EVENT_CTRL_SWITCH,"{\"on\":0}")
+    print(f"back {ret}\n")
+    time.sleep(1)
+
+     # turn on strip
     ret = hue_bridge_strip.hue_bridge_strip_handle(hueBridgeStripCmd.HUE_BRIDGE_STRIP_API_EVENT_CTRL_SWITCH,"{\"on\":1}")
     print(f"back {ret}\n")
     time.sleep(1)
-#     time.sleep(1)
-#     while True:
-#         r = int(input('\nR:'))
-#         g = int(input('G:'))
-#         b = int(input('B:'))
-#         
-#         if r == 0:
-#             break
-#         
-#         ret = hue_bridge_strip.hue_bridge_strip_handle(hueBridgeStripCmd.HUE_BRIDGE_STRIP_API_EVENT_SET_HUE_SAT_BRI_COLOR, f"{{\"r\":{r},\"g\":{g},\"b\":{b}}}")
-#         print(f"back {ret}\n")
-#     time.sleep_ms(120)
-#     hsb = 0
-#     while True:
-#         hsb += 1
-#         if hsb > 0xFFFFFF:
-#             hsb = 0
-#             
-#         hue = hsb&0xFF
-#         sat = (hsb>>8)&0xFF
-#         bri = (hsb>>16)&0xFF
-#         ret = hue_bridge_strip.hue_bridge_strip_handle(hueBridgeStripCmd.HUE_BRIDGE_STRIP_API_EVENT_SET_HUE_SAT_BRI_COLOR,f"{{\"hue\":{hue},\"sat\":{sat},\"bri\":{bri}}}")
-#         print(f"back {ret}\n")
-#         time.sleep_ms(50)
     
+
+    # hue:
+    # sat
+    # bri
     ret = hue_bridge_strip.hue_bridge_strip_handle(hueBridgeStripCmd.HUE_BRIDGE_STRIP_API_EVENT_SET_HUE_SAT_BRI_COLOR,"{\"hue\":50000,\"sat\":100,\"bri\":250}")
     print(f"back {ret}\n")
     time.sleep_ms(1000)
-#     
-    ret = hue_bridge_strip.hue_bridge_strip_handle(hueBridgeStripCmd.HUE_BRIDGE_STRIP_API_EVENT_SET_HUE_SAT_BRI_COLOR,"{\"hue\":50000,\"sat\":100,\"bri\":254}")
-    print(f"back {ret}\n")
-    time.sleep_ms(1000)
-#     
-#     ret = hue_bridge_strip.hue_bridge_strip_handle(hueBridgeStripCmd.HUE_BRIDGE_STRIP_API_EVENT_SET_HUE_SAT_BRI_COLOR,"{\"hue\":50000,\"sat\":100,\"bri\":250}")
-#     print(f"back {ret}\n")
-#     time.sleep_ms(1000)
-#     ret = hue_bridge_strip.hue_bridge_strip_handle(hueBridgeStripCmd.HUE_BRIDGE_STRIP_API_EVENT_SET_HUE_SAT_BRI_COLOR,"{\"r\":100,\"g\":0,\"b\":0}")
-#     ret = hue_bridge_strip.hue_bridge_strip_handle(hueBridgeStripCmd.HUE_BRIDGE_STRIP_API_EVENT_SET_HUE_SAT_BRI_COLOR,"{\"r\":120,\"g\":0,\"b\":0}")
-#     ret = hue_bridge_strip.hue_bridge_strip_handle(hueBridgeStripCmd.HUE_BRIDGE_STRIP_API_EVENT_SET_HUE_SAT_BRI_COLOR,"{\"r\":140,\"g\":0,\"b\":0}")
-#     ret = hue_bridge_strip.hue_bridge_strip_handle(hueBridgeStripCmd.HUE_BRIDGE_STRIP_API_EVENT_SET_HUE_SAT_BRI_COLOR,"{\"r\":160,\"g\":0,\"b\":0}")
-#     ret = hue_bridge_strip.hue_bridge_strip_handle(hueBridgeStripCmd.HUE_BRIDGE_STRIP_API_EVENT_SET_HUE_SAT_BRI_COLOR,"{\"r\":180,\"g\":0,\"b\":0}")
-#     ret = hue_bridge_strip.hue_bridge_strip_handle(hueBridgeStripCmd.HUE_BRIDGE_STRIP_API_EVENT_SET_HUE_SAT_BRI_COLOR,"{\"r\":200,\"g\":0,\"b\":0}")
+
     
-    
-#     print(f"back {ret}")
-    #time.sleep(10)
-    while True:
-        print("Turn off\n")
-        time.sleep(1)
-    
-    print(ret)

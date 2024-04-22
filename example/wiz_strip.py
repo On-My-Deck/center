@@ -142,56 +142,20 @@ if __name__ == '__main__':
         ip = wiz_strip.wiz_strip_handle(wizStripCmd.WIZ_STRIP_API_EVENT_GET_DISCOVER_IP, "{}")
         print(f"Get ip {ip}\n")
     
-    
+    #turn off
+    ret = wiz_strip.wiz_strip_handle(wizStripCmd.WIZ_STRIP_API_EVENT_SET_STATE,"{\"on\":0}")
+    print(f"back {ret}\n")
+    time.sleep_ms(1000)
+
+    # turn on 
     time.sleep(2)
     ret = wiz_strip.wiz_strip_handle(wizStripCmd.WIZ_STRIP_API_EVENT_SET_STATE,"{\"on\":1}")
     print(f"back {ret}\n")
-#     time.sleep(1)
-#     while True:
-#         r = int(input('\nR:'))
-#         g = int(input('G:'))
-#         b = int(input('B:'))
-#         
-#         if r == 0:
-#             break
-#         
-#         ret = wiz_strip.wiz_strip_handle(wizStripCmd.WIZ_STRIP_API_EVENT_SET_RGB_COLOR, f"{{\"r\":{r},\"g\":{g},\"b\":{b}}}")
-#         print(f"back {ret}\n")
-#     time.sleep_ms(120)
-#     rgb = 0
-#     while True:
-#         rgb += 1
-#         if rgb > 0xFFFFFF:
-#             rgb = 0
-#             
-#         r = rgb&0xFF
-#         g = (rgb>>8)&0xFF
-#         b = (rgb>>16)&0xFF
-#         ret = wiz_strip.wiz_strip_handle(wizStripCmd.WIZ_STRIP_API_EVENT_SET_RGB_COLOR,f"{{\"r\":{r},\"g\":{g},\"b\":{b}}}")
-#         print(f"back {ret}\n")
-#         time.sleep_ms(50)
+    time.sleep_ms(1000)
+
     
+    # R：0～255 G：0～255 B:0~255
     ret = wiz_strip.wiz_strip_handle(wizStripCmd.WIZ_STRIP_API_EVENT_SET_RGB_COLOR,"{\"r\":250,\"g\":0,\"b\":0}")
     print(f"back {ret}\n")
-    time.sleep_ms(120)
-    
-    ret = wiz_strip.wiz_strip_handle(wizStripCmd.WIZ_STRIP_API_EVENT_SET_RGB_COLOR,"{\"r\":0,\"g\":250,\"b\":0}")
-    print(f"back {ret}\n")
-    time.sleep_ms(120)
-    
-    ret = wiz_strip.wiz_strip_handle(wizStripCmd.WIZ_STRIP_API_EVENT_SET_RGB_COLOR,"{\"r\":0,\"g\":0,\"b\":250}")
-    print(f"back {ret}\n")
-    time.sleep_ms(120)
-#     ret = wiz_strip.wiz_strip_handle(wizStripCmd.WIZ_STRIP_API_EVENT_SET_RGB_COLOR,"{\"r\":100,\"g\":0,\"b\":0}")
-#     ret = wiz_strip.wiz_strip_handle(wizStripCmd.WIZ_STRIP_API_EVENT_SET_RGB_COLOR,"{\"r\":120,\"g\":0,\"b\":0}")
-#     ret = wiz_strip.wiz_strip_handle(wizStripCmd.WIZ_STRIP_API_EVENT_SET_RGB_COLOR,"{\"r\":140,\"g\":0,\"b\":0}")
-#     ret = wiz_strip.wiz_strip_handle(wizStripCmd.WIZ_STRIP_API_EVENT_SET_RGB_COLOR,"{\"r\":160,\"g\":0,\"b\":0}")
-#     ret = wiz_strip.wiz_strip_handle(wizStripCmd.WIZ_STRIP_API_EVENT_SET_RGB_COLOR,"{\"r\":180,\"g\":0,\"b\":0}")
-#     ret = wiz_strip.wiz_strip_handle(wizStripCmd.WIZ_STRIP_API_EVENT_SET_RGB_COLOR,"{\"r\":200,\"g\":0,\"b\":0}")
     
     
-#     print(f"back {ret}")
-    #time.sleep(10)
-    print("Turn off\n")
-    
-    print(ret)
