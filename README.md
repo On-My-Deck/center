@@ -1,5 +1,5 @@
 # SmartOnMyDeck
-- 中文版
+- [中文版](https://github.com/On-My-Deck/center/blob/main/README_CN.md)
 # Over View
 
 `HardWare Feature`
