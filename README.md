@@ -1,4 +1,5 @@
 # SmartOnMyDeck
+- 中文版
 # Over View
 
 `HardWare Feature`
